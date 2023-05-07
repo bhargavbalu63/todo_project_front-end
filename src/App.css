@@ -2,7 +2,9 @@
   text-align: center;
 
 }
-body{
+*
+{
+  font-family:cursive;
   background-color: tan;
 }
 #input{

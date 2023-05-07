@@ -32,9 +32,9 @@ const deleteHandler=(id)=>
     <div className="App">
 
 
-      <h1>Todo - app</h1>
+      <h1>MY TODO APP</h1>
    <form onSubmit={submitHandler}>
-   <input placeholder='add your task' id="input" type="text" value={newtask} onChange={(e)=>setNewtask(e.target.value)} />
+   <input placeholder='add your task Srija...' id="input" type="text" value={newtask} onChange={(e)=>setNewtask(e.target.value)} />
       <input id="submit" value="Add" type="submit"/>
    </form>
       
