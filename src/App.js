@@ -13,19 +13,19 @@ useEffect(
   ()=>
   {
 
-   axios.get("http://localhost:5000/").then(response=>setTask(response.data));   
+   axios.get("https://todo-back-end-ytaj.onrender.com/").then(response=>setTask(response.data));   
       
   },[])
 
  const submitHandler= ()=>
     {
-       axios.post("http://localhost:5000/addtask", {todo:newtask}).then(response=> setTask(response.data))
+       axios.post("https://todo-back-end-ytaj.onrender.com/addtask", {todo:newtask}).then(response=> setTask(response.data))
        
     }
 const deleteHandler=(id)=>
 {
 
-  axios.delete(`http://localhost:5000/delete/${id}`).then(response=> setTask(response.data))
+  axios.delete(`https://todo-back-end-ytaj.onrender.com/delete/${id}`).then(response=> setTask(response.data))
 
 }
   return (
