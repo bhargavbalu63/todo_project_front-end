@@ -30,29 +30,36 @@ const deleteHandler=(id)=>
 }
   return (
     <div className="App">
+  <div id="head">
+
 
 
       <h1>MY TODO APP</h1>
    <form onSubmit={submitHandler}>
-   <input placeholder='add your task Srija...' id="input" type="text" value={newtask} onChange={(e)=>setNewtask(e.target.value)} />
-      <input id="submit" value="Add" type="submit"/>
-   </form>
-      
 
+   <input placeholder='add your task...' id="input" type="text" value={newtask} onChange={(e)=>setNewtask(e.target.value)} />
+      
+      <input id="submit" value="Add" type="submit"/>
+  
+   </form>
+     
+   </div>
    {/* {task.map(item => (
      <div>
       {item.todo}
       </div>
    ))} */}
 
-   
+   <div className='alltask'>
+
+  
    {task.map((each)=>
    {
 
     return(
       <div key={each._id} id="task">
 
-      <li >
+      <li>
 
          {each.todo}
           
@@ -64,12 +71,8 @@ const deleteHandler=(id)=>
 
    })}
    
-   
-   
-
-
-
-
+   </div>
+  
     </div>
   );
 }
