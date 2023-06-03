@@ -31,7 +31,7 @@ form{
 }
 li{
   border: 2px solid black;
-  width: 300px;
+  width: 200px;
  list-style-type: none;
   float: left;
   margin-top: 10px;
@@ -52,7 +52,7 @@ li{
 #task
 {
   line-height: 30px;
-width: 400px;
+
 margin: auto;
 
 }
